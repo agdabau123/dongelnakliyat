@@ -48,9 +48,7 @@
 <div class="yan"><div class="teklif">
 <h3><svg viewBox="0 0 24 24" class=""><path d="M9 17H6l2-4H5V5h7v8zm10 0h-3l2-4h-3V5h7v8z"/></svg> Kartal Şehirlerarası nakliyat Teklifi</h3>
 <p class="kucuk">Kartal için ücretsiz keşif ve net fiyat. Hemen arayın: <a href='tel:+905388614110' style='color:var(--turuncu);font-weight:700'>0538 861 41 10</a></p>
-<form action="https://formspree.io/f/FORM_ID_BURAYA" method="POST">
-<input type="hidden" name="_next" value="https://www.dongelnakliyat.com/tesekkurler.html">
-<input type="hidden" name="_subject" value="Yeni teklif talebi — Döngel Nakliyat">
+<form onsubmit="return dnGonder(this)">
 <div class="fsat">
 <div><label for="ad">Ad Soyad *</label><input id="ad" name="ad-soyad" required placeholder="Adınız Soyadınız"></div>
 <div><label for="tel">Telefon *</label><input id="tel" name="telefon" type="tel" required placeholder="05XX XXX XX XX"></div>
@@ -67,8 +65,8 @@
 </div>
 <label for="hzm">Hizmet Türü</label><select id="hzm" name="hizmet"><option>Evden Eve Nakliyat</option><option>Ofis Taşımacılığı</option><option selected>Şehirlerarası Nakliyat</option><option>Asansörlü Taşımacılık</option><option>Parça Eşya Taşıma</option><option>Gıda Taşımacılığı</option></select>
 <label for="not">Kısa Not</label><textarea id="not" name="not" rows="2" placeholder="Kat bilgisi, asansör durumu, eşya miktarı..."></textarea>
-<button type="submit" class="btn" style="width:100%;margin-top:15px">Ücretsiz Teklif İste</button>
-<p class="kvkk">* Verileriniz KVKK kapsamında korunur, üçüncü kişilerle paylaşılmaz. Fiyatlar tahmini olup ücretsiz keşif sonrası netleşir.</p>
+<button type="submit" class="btn" style="width:100%;margin-top:15px">WhatsApp ile Teklif İste</button>
+<p class="kvkk">Bilgileriniz WhatsApp üzerinden bize iletilir. Verileriniz KVKK kapsamında korunur, üçüncü kişilerle paylaşılmaz. Fiyatlar tahmini olup ücretsiz keşif sonrası netleşir.</p>
 </form></div></div>
 </div></div></section>
 <section class="gri"><div class="kap">
@@ -105,6 +103,18 @@
 <div class="f-alt"><span>© 2026 Döngel Nakliyat. Tüm hakları saklıdır.</span>
 <span><a href="kvkk.html">KVKK Aydınlatma Metni</a> · <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> · <a href="sss.html">SSS</a></span></div>
 </div></footer>
+
+<script>
+function dnGonder(f){
+  var d=new FormData(f), p=[];
+  var etiket={"ad-soyad":"Ad Soyad","telefon":"Telefon","nereden":"Nereden","nereye":"Nereye","tip":"Ev/İşyeri Tipi","tarih":"Tarih","hizmet":"Hizmet","not":"Not"};
+  for(var k in etiket){ var v=(d.get(k)||"").toString().trim(); if(v) p.push(etiket[k]+": "+v); }
+  var msg="Merhaba, teklif almak istiyorum."+String.fromCharCode(10)+String.fromCharCode(10)+p.join(String.fromCharCode(10));
+  window.open("https://wa.me/905388614110?text="+encodeURIComponent(msg),"_blank");
+  setTimeout(function(){ window.location.href="tesekkurler.html"; },900);
+  return false;
+}
+</script>
 <button class="yukari" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Yukarı çık">↑</button>
 <script>window.addEventListener('scroll',function(){document.querySelector('.yukari').classList.toggle('gor',window.scrollY>600)});</script>
 <a class="wa" href="https://wa.me/905388614110?text=Merhaba%2C%20nakliyat%20hizmetiniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" class=""><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.7-.6-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5l1 2.2c.1.2.1.4 0 .5l-.3.5-.5.5c-.1.2-.3.3-.1.6.2.3.9 1.5 1.9 2.4 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.1.1.6-.1 1.3z"/></svg></a>
