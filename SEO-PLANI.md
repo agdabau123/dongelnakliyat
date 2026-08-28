@@ -1,4 +1,4 @@
-# Döngel Nakliyat — Google İlk Sayfa Planı
+# Dönmar Nakliyat — Google İlk Sayfa Planı
 
 Hedef: İstanbul nakliyat anahtar kelimelerinde Google ilk sayfa.
 Sabah rutini: **her gün 08:00**, otomatik çalışır.

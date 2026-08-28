@@ -142,7 +142,7 @@ footer a:hover{color:var(--turuncu)}
 
 /* ---- GUVEN SERIDI ---- */
 .guven{background:#fff;border-bottom:1px solid var(--kenar);padding:20px 0}
-.guven .kap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.guven .kap{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:18px}
 .guven .g{display:flex;align-items:center;gap:12px}
 .guven .gi{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,#fff2e6,#ffe0c2);display:flex;align-items:center;justify-content:center;flex:none}
 .guven .gi svg{width:21px;height:21px;fill:var(--turuncu)}
