@@ -84,7 +84,7 @@ h3{font-size:21px;color:var(--lac);margin:28px 0 11px;font-weight:700}
 /* ---- ADIMLAR ---- */
 .adim{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:28px;counter-reset:s}
 .adim .a{position:relative;padding-top:14px}
-.adim .a:before{counter-increment:s;content:counter(s);display:flex;align-items:center;justify-content:center;width:46px;height:46px;background:var(--turuncu);color:#fff;font-weight:800;font-size:20px;border-radius:13px;margin-bottom:15px}
+.adim .a:before{counter-increment:s;content:counter(s);display:flex;align-items:center;justify-content:center;width:46px;height:46px;background:var(--turuncu);color:var(--lac);font-weight:800;font-size:20px;border-radius:13px;margin-bottom:15px}
 /* ---- ICERIK ---- */
 .ic-izg{display:grid;grid-template-columns:1.65fr .95fr;gap:44px;align-items:start}
 .yazi p{margin-bottom:15px;color:#3f6069}
@@ -107,11 +107,11 @@ ul.tik li:before{content:"";position:absolute;left:0;top:15px;width:17px;height:
 .semtler{columns:4;column-gap:26px;font-size:14.3px;color:#61828c}
 .semtler span{display:block;padding:4px 0;break-inside:avoid}
 /* ---- CTA ---- */
-.cta{background:linear-gradient(120deg,var(--turuncu),#f9c255);color:#fff;padding:52px 0}
+.cta{background:linear-gradient(120deg,var(--turuncu),#f9c255);color:var(--lac);padding:52px 0}
 .cta .kap{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
-.cta h2{color:#fff;margin-bottom:7px;font-size:29px}
-.cta p{color:rgba(255,255,255,.93);font-size:16px}
-.cta .btn{background:var(--lac)}
+.cta h2{color:var(--lac);margin-bottom:7px;font-size:29px}
+.cta p{color:rgba(15,53,64,.88);font-size:16px}
+.cta .btn{background:var(--lac);color:#fff!important}
 .cta .btn:hover{background:#0d2931}
 /* ---- YOL ---- */
 .yol{font-size:13.5px;color:#7c9aa2;padding:15px 0}
@@ -138,7 +138,7 @@ footer a:hover{color:var(--turuncu)}
 .wa svg{width:31px;height:31px;fill:#fff}
 .mobbar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--kenar);z-index:160;box-shadow:0 -3px 16px rgba(0,0,0,.09)}
 .mobbar a{flex:1;padding:11px 4px;text-align:center;font-size:12px;font-weight:700;color:var(--lac)}
-.mobbar a.ana{background:var(--turuncu);color:#fff}
+.mobbar a.ana{background:var(--turuncu);color:var(--lac)}
 .mobbar a svg{width:19px;height:19px;display:block;margin:0 auto 3px;fill:currentColor}
 
 
