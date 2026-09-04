@@ -72,10 +72,14 @@ Hedef: `istanbul evden eve nakliyat`, `evden eve nakliyat fiyatları`, `nakliyat
 
 ## Senin Yapman Gerekenler (öncelik sırasıyla)
 
-1. **Google İşletme Profili doğrulaması** — en kritik eksik
-2. **Her tamamlanan işten sonra müşteriden Google yorumu iste** — yerel sıralamada yorumlar belirleyici faktör
-3. **Günlük Push** — rutin içerik ürettiğinde Commit + Push
-4. Kalan 3 görsel (ofis, şehirlerarası, gıda)
+Güncel ve ayrıntılı liste: **`pazarlama/SENIN-YAPACAKLARIN.md`**
+
+1. Search Console'a `acemoglumg61@gmail.com` hesabını "Tam" izinle ekle
+2. **Google İşletme Profili** aç ve doğrula — en kritik eksik
+3. Cloudflare'de www yönlendirme kuralı
+4. Gerçek fotoğraflar (araç, ekip, paketleme)
+5. Rehber kayıtlarında isim/telefon tutarlılığı, Instagram + Facebook
+6. Profil açılınca her işten sonra Google yorumu iste
 
 ---
 
@@ -90,3 +94,36 @@ Hedef: `istanbul evden eve nakliyat`, `evden eve nakliyat fiyatları`, `nakliyat
 | 9-12 ay | "İstanbul evden eve nakliyat" gibi ana kelimelerde ilk sayfa mücadelesi |
 
 **Hızlandırıcı:** İlk aylarda organik trafik azken Google Ads ile köprü kurulabilir. SEO oturana kadar lead akışı sağlar.
+
+---
+
+## 4 Eylül 2026 — Derin denetim ve yapı değişikliği
+
+### Ne bulundu
+- **Arama sonucu yapısı** ("istanbul evden eve nakliyat"): 3 reklam → **3 firmalık harita kutusu** → Armut/Enakliyat gibi toplayıcı siteler → firmalar. Sıfırdan bir sitenin en hızlı görünürlük yolu harita kutusu = **Google İşletme Profili**. Profil olmadan ilk ekranda yer yok.
+- **Marka tanınmıyor:** Google "dönmar nakliyat" aramasını "dönmez nakliyat" diye düzeltiyor. Tek kaynak (site) yetmiyor; profil + sosyal hesaplar + tutarlı rehber kayıtları gerekiyor.
+- **www / www'suz ikilik:** `dongelnakliyat.com` yönlendirilmiyor, Google iki adresi de indekslemiş. Cloudflare yönlendirme kuralı gerekiyor (Mustafa'da).
+- **Kapı sayfası riski:** 195 ilçe×hizmet sayfasının 117'si (~330 kelime, yarısı ortak metin) Google'ın "doorway page" tanımına giriyordu. Bu tür sayfalar sıralanmadığı gibi sitenin genel kalite puanını da düşürür.
+- **Search Console erişimi yok:** Chrome'daki hesap mülkün sahibi değil. Sıralama verisi okunamıyor.
+- Küçük: logo "D" harfi snippet'lerde "DDönmar" çıkıyordu (düzeltildi), hero görseli 286 KB (webp 110 KB yapıldı).
+
+### Ne yapıldı
+- 117 ince sayfa **301 ile ilçe sayfalarına birleştirildi** (`site/_redirects`). 39 ilçe sayfasına ilçeye özgü ofis / parça eşya / şehirlerarası bölümleri yazıldı (~316 → ~530 kelime). Site 274 → **157 sayfa**.
+- İç linkler, sitemap ve hizmet sayfalarındaki ilçe listeleri yeni hedeflere çevrildi.
+- Mustafa için sade görev listesi: `pazarlama/SENIN-YAPACAKLARIN.md`
+
+### Hedef kelime kümeleri (arama sonuçlarından doğrulanmış)
+| Küme | Örnek | Sıralayan içerik tipi | Bizde |
+|---|---|---|---|
+| Fiyat | "istanbul evden eve nakliyat fiyatları", "esenyurt nakliye fiyatları", "asansörlü nakliye kaç TL" | Ev tipine göre **fiyat tablosu** + 2026 | Var, ilçe bazlı tablo eksik |
+| İlçe + evden eve | "esenyurt evden eve nakliyat", "avcılar evden eve nakliyat" | 800+ kelime, mahalle detayı, harita kutusu | 6/39 derin |
+| İlçe + nakliyat / nakliyeci / kamyonet | "esenyurt nakliyat", "kadıköy nakliye kamyonet", "esenyurt ucuz nakliye" | İlçe hub sayfası | Hub güçlendirildi |
+| Sık sorulan | "2026 taşınma masrafı ne kadar", "nakliyeciler avize söker mi", "500 km nakliye fiyatı" | SSS/rehber | Kısmen |
+| Güven | "kurumsal evden eve nakliyat firmaları", "istanbul nakliyat yorumları" | Firma seçimi rehberi + yorumlar | Rehber var, yorum yok |
+
+### Önümüzdeki 6 haftanın sırası
+1. Kalan **33 ilçenin evden eve sayfasını** mahalle bazlı derinleştir (günde 2) — en yüksek getirili iş.
+2. Her ilçe için **fiyat tablosu** (ev tipine göre 2026 bandı) — fiyat kümesi en yüksek ticari niyet.
+3. **Asansörlü** sayfalarını merkez ilçelerden başlayarak derinleştir (Kadıköy, Şişli, Beşiktaş, Beyoğlu, Fatih, Üsküdar, Bakırköy, Esenyurt).
+4. Semt rehberleri (Halkalı, Bahçeşehir, Ataköy tarzı) haftada 2.
+5. Profil açılınca: yorum bölümü, QR kart, sameAs şeması.
