@@ -1,105 +1,305 @@
-# Mustafa'nın Yapacakları — sade liste
-
-Sıra önem sırasıdır. Her maddede "neden" ve "nasıl" var. Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
+# Mustafa'nın Yapacakları — adım adım
 
 Son güncelleme: 5 Eylül 2026
 
----
+Dört iş var. Kolaydan zora sıraladım. Her birinde **nereye gideceğin (link)**, **ne tıklayacağın** ve **ne yazacağın** yazıyor.
+Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 
-## 1. Search Console — ÇÖZÜLDÜ ✅ (5 Eylül 2026)
-
-Tarayıcıdaki `mustafaagurman@gmail.com` oturumu üzerinden Search Console'u okuyabiliyorum. Artık her sabah gerçek sıralama, gösterim ve indeksleme verisi raporda yer alıyor; günlük 2-3 sayfa için "Dizine eklenmesini iste" de gönderiyorum.
-
-**Senin yapman gereken bir şey yok** — sadece tarayıcıda Google oturumunun açık kalması yeterli. Oturum kapanırsa raporda "Search Console okunamadı" yazacağım.
-
-İlk veri (25 Ağustos - 2 Eylül): 95 gösterim, 0 tıklama, ortalama konum 71,6. Dizine eklenen 9 sayfa, eklenmeyen 262. Yani site Google tarafından görülüyor ama henüz taranmayı bekliyor — bu yeni siteler için normal, çözümü içerik derinliği ve zaman.
-
----
-
-## 2. Google İşletme Profili'ni aç (30-40 dakika) — EN BÜYÜK KALDIRAÇ
-
-**Neden:** "istanbul evden eve nakliyat" yazınca en üstte reklamlar, hemen altında **3 firmalık harita kutusu** çıkıyor. Oraya girmenin tek yolu bu profil. Site tek başına haritaya giremez. Bugün itibarıyla o kutuda biz yokuz, olamayız da — profil yok.
-
-**Nasıl:** Adım adım hazır: `pazarlama/ISLETME-PROFILI-ACILIS.md`
-Özet:
-- İşletme adı: **Dönmar Nakliyat** (başka kelime ekleme — askıya alırlar)
-- Tür: **Hizmet bölgesi işletmesi** (adres gizli kalır)
-- Telefon: **0538 861 41 10** (sitedekiyle birebir)
-- Site: **https://www.dongelnakliyat.com** (www ile)
-- Video doğrulama: dosyadaki 5 adımı okuduktan sonra tek çekimde yap
-
-**Bitince bana ilet:** Yorum linki (`g.page/r/...`) — QR kartı ve sitedeki yorum bölümünü o linkle hazırlarım.
+| # | İş | Süre | Etki |
+|---|---|---|---|
+| 1 | Cloudflare www yönlendirmesi | 5 dk | Orta |
+| 2 | Google İşletme Profili | 40 dk | **En yüksek** |
+| 3 | Fotoğraf çekimi | 30 dk | Yüksek |
+| 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta |
 
 ---
 
-## 3. Cloudflare'de www yönlendirmesi (5 dakika)
+# 1. Cloudflare — www yönlendirmesi (5 dakika)
 
-**Neden:** Site şu an hem `dongelnakliyat.com` hem `www.dongelnakliyat.com` olarak açılıyor. Google ikisini ayrı site sayıp puanı bölüyor — aramalarda iki adres birden görünüyor. Tek adrese toplamamız lazım.
+## Neden
 
-**Nasıl:**
-1. https://dash.cloudflare.com → giriş → **dongelnakliyat.com** alan adına tıkla
-2. Sol menü: **Rules** → **Redirect Rules** → **Create rule**
-3. Hazır şablon varsa: **"Redirect from Root to WWW"** şablonunu seç → **Deploy**. Şablon yoksa elle:
-   - Rule name: `root to www`
-   - When incoming requests match → **Hostname** — **equals** — `dongelnakliyat.com`
-   - Then → **Dynamic** → Expression kutusuna şunu yapıştır:
-     `concat("https://www.dongelnakliyat.com", http.request.uri.path)`
-   - Status code: **301** — "Preserve query string" işaretli
-   - **Deploy**
-4. Test: tarayıcıya `dongelnakliyat.com/blog` yaz → `www.dongelnakliyat.com/blog` açılmalı.
+Şu an site iki ayrı adreste açılıyor:
+- `dongelnakliyat.com/hakkimizda`
+- `www.dongelnakliyat.com/hakkimizda`
 
----
+İkisi de çalışıyor ve **birbirine yönlendirmiyor**. Google bunu iki ayrı site gibi görebiliyor, puan bölünüyor. Tek adrese toplayacağız: **www'lu olan**.
 
-## 4. Fotoğraf çek (30 dakika, tek seferde)
+## Nereye gideceksin
 
-**Neden:** Sitede 3 hizmet sayfasının görseli hâlâ geçici çizim. Google İşletme Profili de fotoğrafsız profili öne çıkarmaz. Gerçek fotoğraf hem siteyi hem profili güçlendirir; stok görsel işe yaramaz.
+👉 https://dash.cloudflare.com
 
-**Ne çekilecek (telefonla, gündüz):**
-- Araç dıştan, firma yazısı görünecek şekilde (2-3 kare)
-- Araç içi: battaniye, streç, koli, kayışlar (2 kare)
-- Ekip çalışırken: paketleme anı, koltuk sarılırken, koli taşınırken (3-4 kare)
-- Asansörlü taşıma anı, varsa (2 kare)
-- Ofis/iş yeri taşıması varsa bir kare, şehirlerarası yükleme bir kare
+## Adım adım
 
-**Nereye:** `pazarlama/fotograflar/` klasörü aç, içine at. Ben seçer, boyutlandırır, siteye ve profile uygun hale getiririm.
+1. Linke git, giriş yap.
+2. Açılan listede **dongelnakliyat.com** yazan kutuya tıkla.
+3. Sol menüde **Rules** → altında **Redirect Rules** → **Create rule** (mavi buton).
+4. Karşına şablon listesi çıkarsa, **"Redirect from Root to WWW"** şablonunu seç → alan adını kontrol et → **Deploy**. İşin bitti, 6. adıma geç.
+5. Şablon çıkmazsa elle doldur — sırayla şunları yaz:
 
----
+   **Rule name:** `root to www`
 
-## 5. Rehber kayıtlarını kontrol et (10 dakika)
+   **When incoming requests match** bölümünde **Wildcard pattern** seçeneğini seç:
+   ```
+   Request URL:  https://dongelnakliyat.com/*
+   ```
 
-**Neden:** Google "Dönmar Nakliyat" yazınca bizi tanımıyor, "Dönmez Nakliyat" diye düzeltiyor. Markanın Google'da "gerçek bir işletme" sayılması için isim-telefon-site üçlüsünün her yerde **aynı** olması lazım.
+   **Then** bölümü:
+   ```
+   Type:         Static  (veya "URL redirect")
+   Target URL:   https://www.dongelnakliyat.com/${1}
+   Status code:  301 - Permanent Redirect
+   ```
+   **Preserve query string** kutusunu **işaretle**.
 
-**Nasıl:**
-- bulurum.com'da "DÖNMAR TAŞIMACILIK (İsa Döngel), Başakşehir, 0545 271 79 54" diye bir kayıt var. **Bu senin işletmen mi?**
-  - Evetse: kaydı sahiplen, adı **Dönmar Nakliyat**, telefonu **0538 861 41 10**, siteyi **www.dongelnakliyat.com** yap.
-  - Değilse: dokunma, bana söyle.
-- Başka bir yerde (eski ilan siteleri, Yandex, sahibinden vb.) firma kaydın varsa aynı düzeltmeyi yap. Farklı numara ve farklı isim, Google için "iki ayrı firma" demek.
+6. **Deploy** butonuna bas.
 
----
+## Test et (bunu mutlaka yap)
 
-## 6. Instagram + Facebook sayfası aç (20 dakika, sonra haftada 1 paylaşım)
+Tarayıcının adres çubuğuna şunu yaz ve entera bas:
 
-**Neden:** Takipçi için değil. Google, markanın var olduğuna ancak birden fazla kaynakta aynı bilgiyi görünce inanır. İki sosyal hesap + İşletme Profili + site = "gerçek marka" sinyali.
+```
+dongelnakliyat.com/blog
+```
 
-**Nasıl:**
-- İsim: **Dönmar Nakliyat** — Bio'da: telefon `0538 861 41 10` + `www.dongelnakliyat.com`
-- Haftada 1 paylaşım yeter: gerçek iş fotoğrafı + iki cümle. Slogan, stok görsel, hashtag yığını yok.
-- Hesap adreslerini bana ilet, sitenin şemasına (sameAs) eklerim.
+Adres kendiliğinden `www.dongelnakliyat.com/blog` olarak değişiyorsa **tamam**. Değişmiyorsa bana söyle.
+
+> Not: Bu işi site dosyalarından yapamıyorum. Cloudflare'de alan adı seviyesindeki yönlendirme sadece panelden kuruluyor. Panele girmemi istersen de yapabilirim ama hesap ayarı olduğu için her adımda onayını isterim — sen 5 dakikada bitirirsin.
 
 ---
 
-## 7. Her iş sonrası yorum iste (Profil açılınca başlar)
+# 2. Google İşletme Profili (40 dakika, tek oturumda)
 
-**Neden:** Harita kutusunda sıralamayı belirleyen üç şey: yakınlık, yorum sayısı, yorum kalitesi. Rakiplerin yorumu var, bizim sıfır.
+## Neden
 
-**Nasıl:** `pazarlama/YORUM-TOPLAMA.md` — teslimattan sonra WhatsApp'tan tek mesaj. Sahte yorum, tanıdıktan yorum, indirim karşılığı yorum **yok** — profil askıya alınır, geri almak aylar sürer.
+"istanbul evden eve nakliyat" yazınca en üstte reklamlar, hemen altında **3 firmalık harita kutusu** çıkıyor. O kutuya girmenin **tek yolu** bu profil. Site tek başına oraya giremez.
+
+Ayrıca Search Console verisi şunu gösteriyor: 271 sayfamızın sadece 9'u Google'ın dizininde. Google siteyi "gerçek bir işletme" olarak henüz tanımadığı için ağır davranıyor. İşletme Profili bu güveni en hızlı kuran şey.
+
+## Nereye gideceksin
+
+👉 https://business.google.com/create
+
+(çalışmazsa: https://www.google.com/business/ → sağ üstte **Şimdi yönetin**)
+
+## Başlamadan önce masaya koy
+
+- [ ] Profili yönetecek Google hesabı — **`mustafaagurman@gmail.com` kullan** (Search Console'da da bu hesap var, ikisi aynı olsun)
+- [ ] **Vergi levhası** (videoda göstereceksin)
+- [ ] **Araç** — üzerinde firma yazısı varsa çok iyi
+- [ ] Telefonun şarjı ve 5 dakika sessiz zaman
+
+## Adım adım — ne yazacaksın
+
+Ekranlar sırayla gelir, aşağıdakileri **birebir** gir:
+
+| Google ne sorar | Sen ne yazacaksın |
+|---|---|
+| İşletme adı | `Dönmar Nakliyat` |
+| İşletme kategorisi | `Nakliyat şirketi` |
+| Müşterilerin gelebileceği bir yer var mı? | **Hayır** |
+| Hizmet verdiğin bölgeler | Aşağıdaki 15 ilçe |
+| Telefon | `0538 861 41 10` |
+| Web sitesi | `https://www.dongelnakliyat.com` |
+
+### ⚠️ İşletme adına tek kelime ekleme
+
+`Dönmar Nakliyat İstanbul Evden Eve` gibi bir isim Google'ın kuralını ihlal eder ve **profili askıya aldırır**. Anahtar kelime işini site yapıyor zaten.
+
+### Hizmet bölgeleri — sadece bu 15'ini gir
+
+```
+Esenyurt · Küçükçekmece · Bahçelievler · Bağcılar · Beylikdüzü
+Başakşehir · Avcılar · Pendik · Kartal · Maltepe
+Ümraniye · Ataşehir · Kadıköy · Üsküdar · Şişli
+```
+
+39 ilçenin hepsini girme — sinyali seyreltir. Profil oturunca listeyi genişletiriz.
+
+### Çalışma saatleri
+
+Pazartesi–Pazar: `08:00 – 20:00`
+
+### İşletme açıklaması
+
+Profil açıldıktan sonra **Düzenle → Açıklama** kısmına şunu **olduğu gibi** yapıştır:
+
+```
+Dönmar Nakliyat, İstanbul genelinde evden eve nakliyat, ofis taşımacılığı,
+şehirlerarası nakliyat, asansörlü taşımacılık, parça eşya taşıma ve gıda
+taşımacılığı hizmeti veriyor. 10 yılı aşkın saha tecrübemizle çalışıyoruz.
+
+Keşif ücretsizdir. Keşifte verdiğimiz fiyat yazılı sözleşmeye geçer ve orada
+sabitlenir; iş uzadı ya da eşya fazla çıktı gerekçesiyle sonradan ek ücret
+talep etmiyoruz. Taşeron ekip kullanmıyoruz, işi kendi aracımız ve sabit
+kadromuzla yapıyoruz. Tüm taşımalar sigortalıdır, her iş için fatura
+düzenlenir.
+
+Paketleme malzemesi, mobilya montaj ve demontajı standart hizmetimize
+dahildir. Ücretsiz keşif için 0538 861 41 10.
+```
+
+## Video doğrulaması — en kritik kısım
+
+Hizmet bölgesi işletmelerinde Google genelde **video** istiyor. **Çekmeden önce bu bölümü sonuna kadar oku.**
+
+**Kurallar**
+- **Kesintisiz** çek, **en az 30 saniye**
+- Hiç kesme, hiç düzenleme yok — beğenmezsen baştan çek
+- Telefonla ve **profili açtığın Google hesabıyla giriş yapmışken** çek
+
+**Çekim sırası — bu sırayla yürü, kamerayı hiç durdurma**
+
+1. **Dışarıyı göster** — sokak, tabela, çevredeki bir bina (Google konumu buradan anlıyor)
+2. **Yürüyerek araca git** — kesme yapma, yürürken çek
+3. **Aracın dışını göster** — firma yazısı varsa yakın çek
+4. **Araç kapısını aç, içini göster** — battaniye, streç, koli, kayış, ambalaj malzemesi
+5. **Sonunda vergi levhasını** veya üzerinde işletme adı geçen bir belgeyi kameraya tut
+
+**Araçta firma yazısı yoksa:** üniforma, fatura, kartvizit veya vergi levhası mutlaka net görünsün. İşletme adının fiziksel bir kanıtı ekranda olmalı.
+
+> ⚠️ Üst üste başarısız denemeden sonra Google "başka doğrulama yolu yok" diyip destek hattına yönlendiriyor ve süreç haftalara yayılıyor. **İlk denemeyi aceleye getirme.** Yukarıdaki 5 adımı kafanda bir kez prova et, sonra kaydı başlat.
+
+Doğrulama sonucu genelde **birkaç gün** içinde e-postayla geliyor.
+
+## Onaylandıktan sonra bana ne göndereceksin
+
+Profil → **Yorum iste** → çıkan `g.page/r/...` linkini kopyala, bana at.
+O linkle QR kartını ve sitedeki yorumlar bölümünü ben hazırlarım.
+
+Ayrıntılı versiyon: `pazarlama/ISLETME-PROFILI-ACILIS.md`
 
 ---
 
-## Benim tarafım (senden bir şey istemez)
+# 3. Fotoğraf çekimi (30 dakika)
 
-- Her sabah 08:00: ölçüm → 3 içerik → doğrulama → otomatik yayın. Push çalışıyor.
-- Bugün yapılan büyük değişiklik: 117 ince ilçe×hizmet sayfası ilçe sayfalarına birleştirildi (Google'ın "kapı sayfası" cezası riskini kaldırmak için). Site 274 → 157 sayfa, ama her sayfa daha dolu.
-- Sıradaki 6 hafta: 33 ilçenin evden eve sayfasını mahalle mahalle derinleştirme (Esenyurt, Bahçelievler, Pendik, Ümraniye, Kadıköy, Küçükçekmece bitti) + fiyat içerikleri + semt rehberleri.
+## Neden
 
-**Push "token" hatası verirse** raporda yazarım; `TOKEN-KUR.bat` dosyasını tekrar çalıştırman yeter.
+İki yerde birden lazım:
+- **Sitede** 3 hizmet sayfasının görseli hâlâ geçici çizim (ofis taşımacılığı, şehirlerarası nakliyat, gıda taşımacılığı)
+- **İşletme Profili** fotoğrafsız profilleri öne çıkarmıyor
+
+Stok görsel işe yaramaz — Google gerçek fotoğrafı ayırt ediyor.
+
+## Ne çekeceksin
+
+Telefonla, **gündüz, doğal ışıkta**. Yatay çek (telefonu yan tut).
+
+| Konu | Kaç kare |
+|---|---|
+| Araç dıştan, firma yazısı görünecek şekilde | 3 |
+| Araç içi: battaniye, streç, koli, kayışlar | 2 |
+| Ekip çalışırken: koltuk sarılırken, koli taşınırken | 4 |
+| Asansörlü taşıma anı (varsa) | 2 |
+| Ofis / işyeri taşıması (varsa) | 2 |
+| Şehirlerarası yükleme, kapalı kasa dolu hali (varsa) | 2 |
+| Soğuk zincir / gıda taşıma (varsa) | 2 |
+
+**Yüz görünmesin** — ya arkadan çek ya da ekibe önceden söyle. Müşterinin evi/eşyası tanınacak şekilde çıkmasın.
+
+## Nereye koyacaksın
+
+Bilgisayarda şu klasörü aç ve içine at:
+
+```
+C:\Users\acemo\OneDrive\Belgeler\GitHub\dongelnakliyat\pazarlama\fotograflar
+```
+
+Klasörü senin için oluşturdum, hazır duruyor. İsim vermene gerek yok, olduğu gibi at.
+
+Sonrasını ben yaparım: seçme, kırpma, sıkıştırma, webp'e çevirme, siteye yerleştirme, alt metin yazma.
+
+---
+
+# 4. Marka kayıtları (40 dakika)
+
+## Neden
+
+Google'da `dönmar nakliyat` yazınca hâlâ "dönmez nakliyat" diye düzeltiyor. Yani Google bu markayı henüz tanımıyor.
+
+Google bir markanın gerçek olduğuna, **aynı bilgiyi birden fazla bağımsız kaynakta** görünce inanıyor. O bilgi şu üçlü:
+
+## 📋 Her yere birebir bu bilgiyi gireceksin
+
+```
+İsim:     Dönmar Nakliyat
+Telefon:  0538 861 41 10
+Site:     https://www.dongelnakliyat.com
+E-posta:  info@dongelnakliyat.com
+Saatler:  Her gün 08:00 - 20:00
+```
+
+**Kural:** Tek bir harf, tek bir boşluk bile farklı olmayacak. Farklı numara = Google için ayrı firma.
+
+## 4a. Bulurum kaydını düzelt (10 dk)
+
+👉 https://www.bulurum.com
+
+Orada şöyle bir kayıt var: **"DÖNMAR TAŞIMACILIK (İsa Döngel), Başakşehir, 0545 271 79 54"**
+
+- **Bu senin işletmense:** kaydı sahiplen, adı `Dönmar Nakliyat`, telefonu `0538 861 41 10`, siteyi `www.dongelnakliyat.com` yap.
+- **Senin değilse:** dokunma, bana haber ver.
+
+## 4b. Yandex Business — ücretsiz, rakip az (15 dk)
+
+👉 https://yandex.com.tr/sprav/add/
+
+Türkiye'de Yandex Haritalar hatırı sayılır kullanılıyor ve nakliyat kategorisinde rekabet Google'a göre çok daha az. Ücretsiz.
+
+1. Linke git, Yandex hesabıyla giriş yap (yoksa 1 dakikada açılıyor)
+2. Firma adı: `Dönmar Nakliyat`
+3. Faaliyet türü: `Nakliyat` / `Taşımacılık`
+4. Yukarıdaki telefon ve site bilgisini gir
+5. Doğrulama: telefona SMS gelir, kodu gir
+
+## 4c. Instagram + Facebook (15 dk)
+
+Takipçi için değil, **marka sinyali** için.
+
+👉 https://www.instagram.com/accounts/emailsignup/
+👉 https://www.facebook.com/pages/create
+
+- Kullanıcı adı: `donmarnakliyat` (müsaitse)
+- Görünen isim: `Dönmar Nakliyat`
+- Biyografi:
+  ```
+  İstanbul geneli evden eve nakliyat · Sigortalı taşıma · Yazılı sabit fiyat
+  ☎ 0538 861 41 10
+  ```
+- Web sitesi alanı: `https://www.dongelnakliyat.com`
+
+**Sonrası:** Haftada 1 paylaşım yeter. Gerçek bir iş fotoğrafı + iki cümle. Slogan yok, stok görsel yok, 30 hashtag yok.
+
+## Bitince bana ne göndereceksin
+
+Açtığın hesapların adreslerini bana at (Instagram, Facebook, Yandex). Sitenin arka planındaki marka şemasına (`sameAs`) eklerim — Google "bu hesaplar aynı firmaya ait" diye okur.
+
+---
+
+# 5. Yorum toplama (2 numara bitince otomatik başlar)
+
+Şimdilik yapacağın bir şey yok. Profil onaylanınca:
+
+- Ben: QR kartı + WhatsApp mesaj şablonu + sitedeki yorumlar bölümünü hazırlarım
+- Sen: iş bitiminde müşteriye tek mesaj atarsın
+
+Ayrıntı: `pazarlama/YORUM-TOPLAMA.md`
+
+> ❌ **Sahte yorum, tanıdıktan yorum, indirim karşılığı yorum yok.** Google bunları yakalıyor ve profili askıya alıyor; geri almak aylar sürüyor.
+
+---
+
+# Benim tarafım (senden bir şey istemez)
+
+- Her sabah: Search Console ölçümü → 2 ilçe sayfası derinleştirme → günün içeriği → doğrulama → otomatik yayın
+- **5 Eylül itibarıyla Search Console okunuyor** — artık gerçek sıralama verisi raporda var. Tek şart: tarayıcıda Google oturumun açık kalsın.
+- Kalan ince sayfa: evden eve 31/39, asansörlü 39/39. Günde 2 tanesini derinleştiriyorum.
+- Push "token" hatası verirse raporda yazarım; `TOKEN-KUR.bat` dosyasını tekrar çalıştırman yeter.
+
+---
+
+## Özet — şu sırayla yap
+
+1. **Bugün:** Cloudflare yönlendirmesi (5 dk) → hemen kapanır
+2. **Bu hafta sonu:** İşletme Profili + video (40 dk) → en büyük kazanç
+3. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
+4. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)

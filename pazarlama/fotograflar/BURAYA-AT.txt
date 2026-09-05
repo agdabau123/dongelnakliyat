@@ -1,0 +1,20 @@
+Fotografları bu klasöre at. İsimlendirmene gerek yok.
+
+Ne çekilecek (telefonla, gündüz, YATAY):
+- Araç dıştan, firma yazısı görünsün (3 kare)
+- Araç içi: battaniye, streç, koli, kayış (2 kare)
+- Ekip çalışırken: koltuk sarılırken, koli taşınırken (4 kare)
+- Asansörlü taşıma anı, varsa (2 kare)
+- Ofis / işyeri taşıması, varsa (2 kare)
+- Şehirlerarası yükleme / kapalı kasa dolu hali, varsa (2 kare)
+- Gıda / soğuk zincir taşıma, varsa (2 kare)
+
+Yüz görünmesin. Müşterinin evi/eşyası tanınacak şekilde çıkmasın.
+
+Fotograflar geldikten sonra ben yaparım: seçme, kırpma, sıkıştırma,
+webp'e çevirme, siteye yerleştirme, alt metin yazma.
+
+Öncelikli 3 eksik görsel:
+  images/ofis-tasimaciligi.svg      -> gerçek ofis taşıma fotoğrafı
+  images/sehirlerarasi-nakliyat.svg -> gerçek şehirlerarası yükleme fotoğrafı
+  images/gida-tasimaciligi.svg      -> gerçek gıda taşıma fotoğrafı
