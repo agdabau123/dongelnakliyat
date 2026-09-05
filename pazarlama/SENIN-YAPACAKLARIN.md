@@ -2,22 +2,17 @@
 
 Sıra önem sırasıdır. Her maddede "neden" ve "nasıl" var. Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 
-Son güncelleme: 4 Eylül 2026
+Son güncelleme: 5 Eylül 2026
 
 ---
 
-## 1. Search Console'a beni ekle (5 dakika) — EN ACİL
+## 1. Search Console — ÇÖZÜLDÜ ✅ (5 Eylül 2026)
 
-**Neden:** Her sabah hangi kelimede kaçıncı sıradayız, hangi sayfa indekslendi, nerede hata var — bunları ancak buradan görebiliyorum. Şu an göremiyorum, kör çalışıyorum.
+Tarayıcıdaki `mustafaagurman@gmail.com` oturumu üzerinden Search Console'u okuyabiliyorum. Artık her sabah gerçek sıralama, gösterim ve indeksleme verisi raporda yer alıyor; günlük 2-3 sayfa için "Dizine eklenmesini iste" de gönderiyorum.
 
-**Nasıl:**
-1. Bilgisayarda `mustafaagurman@gmail.com` ile giriş yap.
-2. Şu adrese git: https://search.google.com/search-console
-3. Sol üstten mülkü seç: **dongelnakliyat.com**
-4. Sol menüde en altta **Ayarlar** → **Kullanıcılar ve izinler** → sağ üstte **Kullanıcı ekle**
-5. E-posta: `acemoglumg61@gmail.com` — İzin: **Tam** (Sahip değil, "Tam" yeterli) → **Ekle**
+**Senin yapman gereken bir şey yok** — sadece tarayıcıda Google oturumunun açık kalması yeterli. Oturum kapanırsa raporda "Search Console okunamadı" yazacağım.
 
-Bu kadar. Ertesi sabahki raporda gerçek sıralama verisi görürsün.
+İlk veri (25 Ağustos - 2 Eylül): 95 gösterim, 0 tıklama, ortalama konum 71,6. Dizine eklenen 9 sayfa, eklenmeyen 262. Yani site Google tarafından görülüyor ama henüz taranmayı bekliyor — bu yeni siteler için normal, çözümü içerik derinliği ve zaman.
 
 ---
 
