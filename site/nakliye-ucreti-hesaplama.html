@@ -314,6 +314,9 @@ function dnGonder(f){
     var carpan = parseFloat(mesafe) * paket;
     if (asansor === "var" && enYuksekKat >= 3) carpan *= 1.04;
     if (asansor === "yok" && enYuksekKat >= 3) carpan *= 1.08;
+    // zorluklar ust uste bindiginde bant piyasa disina tasmasin
+    var ustSinir = false;
+    if (carpan > 1.30) { carpan = 1.30; ustSinir = true; }
 
     var alt = yuvarla(taban[0] * carpan);
     var ust = yuvarla(taban[1] * carpan);
@@ -326,6 +329,7 @@ function dnGonder(f){
     if (mesafe === "1.20") notlar.push("Yakalar arası geçiş nedeniyle süre ve yol maliyeti taban banda eklendi.");
     else if (parseFloat(mesafe) > 1) notlar.push("Mesafe farkı taban banda eklendi.");
     if (paket > 1) notlar.push("Tüm paketlemenin bize ait olduğu tam hizmet dahil.");
+    if (ustSinir) notlar.push("<b>Birden fazla zorluk üst üste geldi</b> (kat, asansör, mesafe, tam paketleme). Bu tür işlerde bant piyasanın üst ucuna oturur ve net rakam ancak keşifle çıkar.");
     notlar.push("Aracın bina önüne yanaşabildiği varsayıldı; dar sokakta eşyanın elle taşınacağı mesafe bandı yukarı çeker.");
     d("h-not").innerHTML = notlar.join(" ");
 
