@@ -8,7 +8,7 @@ Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 | # | İş | Süre | Etki | Durum |
 |---|---|---|---|---|
 | 1 | Cloudflare www yönlendirmesi | 5 dk | Orta | ✅ **BİTTİ** — 5 Eylül |
-| 2 | Google İşletme Profili | 40 dk | **En yüksek** | ⬜ sırada |
+| 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🟡 açıldı — kategori + video kaldı |
 | 3 | Fotoğraf çekimi | 30 dk | Yüksek | ⬜ |
 | 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta | ⬜ |
 
@@ -90,7 +90,41 @@ Adres kendiliğinden `www.dongelnakliyat.com/blog` olarak değişiyorsa **tamam*
 
 ---
 
-# 2. Google İşletme Profili (40 dakika, tek oturumda)
+# 2. Google İşletme Profili — 🟡 AÇILDI, DOĞRULAMA BEKLİYOR
+
+## Durum (5 Eylül 2026)
+
+Profil oluşturuldu, şu an **"HERKESE GÖRÜNÜR DEĞİL"** — doğrulama yapılmadığı için Google'da yayında değil.
+
+| Alan | Değer | |
+|---|---|---|
+| İşletme adı | Dönmar Nakliyat | ✅ |
+| Çalışma saatleri | 09:00 – 21:00 | ✅ site ile birebir |
+| Telefon | 0538 861 41 10 | ✅ |
+| Web sitesi | https://www.dongelnakliyat.com | ✅ |
+| Açıklama | 733 karakter, girildi | ✅ |
+| Hizmet bölgesi | İstanbul, Türkiye | ✅ yeterli |
+| Açılış tarihi | 1 Şubat 2019 (şirket kuruluşu) | ✅ |
+| **Kategori** | Nakliye Hizmeti (birincil) + Evden Eve Nakliyat | ⚠️ **ters — düzeltilecek** |
+| **Doğrulama** | yapılmadı (video) | ⬜ **kalan iş** |
+| Fotoğraf | yok — gerçek fotoğraf bekleniyor | ⬜ |
+
+### Kalan iki iş
+
+**a) Kategorileri yer değiştir (2 dk)**
+`Evden Eve Nakliyat` **birincil** olmalı, `Nakliye Hizmeti` ek kategori olarak kalmalı.
+Yerel aramada birincil kategori diğerlerinden kat kat ağır basar; hedefimiz "istanbul evden eve nakliyat" olduğu için birebir eşleşen kategori öne alınmalı.
+Yol: **Profili düzenle → Hakkında → İşletme kategorisi**
+
+**b) Video doğrulaması**
+Ofiste ve araç yanındayken yapılacak. Adımlar aşağıda, aynen geçerli.
+
+### 📌 Kayda geçsin: 2019 vs "10 yılı aşkın tecrübe"
+
+Şirket **1 Şubat 2019**'da kuruldu, ama Mustafa işi daha eskiden beri yapıyor.
+Sitedeki "10 Yılı Aşkın Tecrübe · İstanbul genelinde saha tecrübesi" ifadesi **şirketin yaşını değil saha tecrübesini** anlatıyor — doğru ve çelişki değil. Bu iki bilgiyi karıştırıp site metnini değiştirme.
+
+---
 
 ## Neden
 
@@ -323,6 +357,6 @@ Ayrıntı: `pazarlama/YORUM-TOPLAMA.md`
 ## Özet — şu sırayla yap
 
 1. ~~Cloudflare yönlendirmesi~~ ✅ **bitti (5 Eylül)**
-2. **Sıradaki:** İşletme Profili + video (40 dk) → en büyük kazanç
+2. İşletme Profili 🟡 **açıldı** — kalan: kategorileri yer değiştir (2 dk) + video doğrulaması (ofiste)
 3. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
 4. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
