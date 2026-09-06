@@ -5,16 +5,37 @@ Son güncelleme: 5 Eylül 2026
 Dört iş var. Kolaydan zora sıraladım. Her birinde **nereye gideceğin (link)**, **ne tıklayacağın** ve **ne yazacağın** yazıyor.
 Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 
-| # | İş | Süre | Etki |
-|---|---|---|---|
-| 1 | Cloudflare www yönlendirmesi | 5 dk | Orta |
-| 2 | Google İşletme Profili | 40 dk | **En yüksek** |
-| 3 | Fotoğraf çekimi | 30 dk | Yüksek |
-| 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta |
+| # | İş | Süre | Etki | Durum |
+|---|---|---|---|---|
+| 1 | Cloudflare www yönlendirmesi | 5 dk | Orta | ✅ **BİTTİ** — 5 Eylül |
+| 2 | Google İşletme Profili | 40 dk | **En yüksek** | ⬜ sırada |
+| 3 | Fotoğraf çekimi | 30 dk | Yüksek | ⬜ |
+| 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta | ⬜ |
 
 ---
 
-# 1. Cloudflare — www yönlendirmesi (5 dakika)
+# 1. Cloudflare — www yönlendirmesi ✅ ÇÖZÜLDÜ (5 Eylül 2026)
+
+Kural yayında ve **Active**: `Redirect from root to WWW [Template]`
+`https://dongelnakliyat.com/*` → `https://www.dongelnakliyat.com/${1}` · **301** · query string korunuyor.
+
+Test edildi, üçü de geçti:
+- `dongelnakliyat.com/blog` → www'ya döndü ✅
+- `dongelnakliyat.com/evden-eve-nakliyat-maltepe` → www'ya döndü ✅
+- `dongelnakliyat.com/teklif-al?utm_source=test` → www'ya döndü, parametre korundu ✅
+
+Artık site tek adreste toplandı. Bir daha dokunmana gerek yok.
+
+<details>
+<summary>Nasıl yapıldığı (kayıt için)</summary>
+
+Cloudflare → dongelnakliyat.com → **Rules → Overview** → şablon listesi → **"Redirect from root to WWW"** kartı → *Create from template* → **Preserve query string** işaretle → **Deploy**.
+
+⚠️ Listede birbirine çok benzeyen iki kart var. Doğru olanın açıklaması *"Always redirect HTTP requests from the root..."* diye başlar. *"...from the WWW subdomain"* diye başlayan kart tam tersini yapar.
+</details>
+
+<details>
+<summary>Eski talimat (artık gerekmiyor)</summary>
 
 ## Neden
 
@@ -63,7 +84,9 @@ dongelnakliyat.com/blog
 
 Adres kendiliğinden `www.dongelnakliyat.com/blog` olarak değişiyorsa **tamam**. Değişmiyorsa bana söyle.
 
-> Not: Bu işi site dosyalarından yapamıyorum. Cloudflare'de alan adı seviyesindeki yönlendirme sadece panelden kuruluyor. Panele girmemi istersen de yapabilirim ama hesap ayarı olduğu için her adımda onayını isterim — sen 5 dakikada bitirirsin.
+> Not: Bu işi site dosyalarından yapamıyorum. Cloudflare'de alan adı seviyesindeki yönlendirme sadece panelden kuruluyor.
+
+</details>
 
 ---
 
@@ -299,7 +322,7 @@ Ayrıntı: `pazarlama/YORUM-TOPLAMA.md`
 
 ## Özet — şu sırayla yap
 
-1. **Bugün:** Cloudflare yönlendirmesi (5 dk) → hemen kapanır
-2. **Bu hafta sonu:** İşletme Profili + video (40 dk) → en büyük kazanç
+1. ~~Cloudflare yönlendirmesi~~ ✅ **bitti (5 Eylül)**
+2. **Sıradaki:** İşletme Profili + video (40 dk) → en büyük kazanç
 3. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
 4. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
