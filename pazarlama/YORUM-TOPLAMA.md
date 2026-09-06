@@ -2,24 +2,77 @@
 
 Hedef: **ayda 5-8 gerçek yorum.** Üç ayda 20 yorum, yerel aramada seni rakiplerin önüne taşır.
 
+> ## 🎯 Eşik sandığımızdan düşük — 5 Eylül 2026 SERP incelemesi
+>
+> `istanbul evden eve nakliyat` harita kutusundaki üç firma:
+>
+> | Firma | Yorum |
+> |---|---|
+> | Altus Evden Eve | 4,9 · 142 yorum |
+> | **Pera Nakliyat** | 5,0 · **10 yorum** |
+> | Eyüpoğlu Taşımacılık | 5,0 · 32 yorum |
+>
+> **10 yorumla İstanbul geneli harita kutusunda ikinci sıra.** Yüzlerce yorum gerekmiyor.
+> İlçe seviyesinde durum daha da iyi: `esenyurt evden eve nakliyat` kutusundaki üç firmanın hiçbirinde yorum sayısı bile görünmüyor.
+>
+> **20-30 gerçek yorum bizi oyunun içine sokar.** Bu, 4-5 ayda ulaşılabilir bir sayı.
+
 ---
 
-## Önce: Google İşletme Profili'ni aç
+## 📍 Durum: 5 Eylül 2026
 
-Yorum toplamanın ön şartı. `google.com/business` → **Dönmar Nakliyat**
-
-**Kritik ayarlar:**
-
-| Alan | Ne yazmalı |
+| | |
 |---|---|
-| İşletme adı | `Dönmar Nakliyat` — sonuna "İstanbul evden eve" gibi kelime **ekleme**, Google ceza veriyor |
-| Kategori (ana) | `Nakliyat şirketi` |
-| Ek kategoriler | `Depolama tesisi`, `Lojistik hizmeti` |
-| İşletme türü | **Hizmet bölgesi işletmesi** — adresini gizle, müşteriye sen gidiyorsun |
-| Hizmet bölgeleri | İstanbul + yoğun çalıştığın 10-15 ilçe (39'unu birden girme, Google seyreltiyor) |
-| Telefon | `0538 861 41 10` — sitedekiyle **birebir aynı** olmalı |
+| Profil | ✅ oluşturuldu — **Dönmar Nakliyat** |
+| Ana kategori | ✅ Evden Eve Nakliyat |
+| Doğrulama | ❌ **yapılmadı** — profil "HERKESE GÖRÜNÜR DEĞİL" |
+| Yorum linki | ❌ **henüz yok** |
+
+> **Doğrulanmamış profile yorum yazılamaz.** Profil Google'da yayında olmadığı için müşteri arasa bile bulamaz, yorum kutusu açılmaz. Link de doğrulamadan sonra üretiliyor.
+>
+> **Yani: video doğrulaması yapılmadan yorum toplama başlayamaz.** Sıradaki tek iş bu.
+
+### Ara çözüm: Yandex'te hemen başlayabilirsin
+
+Yandex Business **SMS ile doğruluyor, video istemiyor.** Kaydı açtığın gün yorum toplamaya başlayabilirsin ve Yandex Haritalar Türkiye'de ciddi kullanılıyor.
+
+👉 https://yandex.com.tr/sprav/add/
+
+Aynı WhatsApp şablonlarını Yandex linkiyle kullanabilirsin. Google doğrulanınca ikisini paralel yürütürüz.
+
+---
+
+## Doğrulandığı gün: yorum linkini nereden alacaksın
+
+Google iki farklı link veriyor, ikisi de çalışır:
+
+**1. Kısa link (tavsiye edilen)**
+İşletme Profili → **Yorum iste** butonu → çıkan adres:
+```
+https://g.page/r/XXXXXXXXXXXX/review
+```
+
+**2. Uzun link (kalıcı, yedek)**
+```
+https://search.google.com/local/writereview?placeid=XXXXXXXXXXXX
+```
+
+Hangisini alırsan al **bana ilet** — QR kartını ve sitedeki yorumlar bölümünü aynı gün üretirim. QR üreteci hazır bekliyor: `pazarlama/qr-uret.py`
+
+---
+
+## Profil ayarları (referans — hepsi girildi ✅)
+
+| Alan | Değer |
+|---|---|
+| İşletme adı | `Dönmar Nakliyat` — sonuna kelime **ekleme**, Google ceza veriyor |
+| Kategori (ana) | `Evden Eve Nakliyat` |
+| Ek kategori | `Nakliye Hizmeti` |
+| İşletme türü | **Hizmet bölgesi işletmesi** — adres gizli |
+| Hizmet bölgesi | İstanbul |
+| Telefon | `0538 861 41 10` — sitedekiyle birebir |
 | Web sitesi | `https://www.dongelnakliyat.com` |
-| Çalışma saatleri | Her gün 08:00 - 20:00 |
+| Çalışma saatleri | Her gün 09:00 - 21:00 |
 
 ### Video doğrulaması — ilk seferde geçmek için
 
@@ -160,9 +213,31 @@ Sahte yorum Türkiye'de Ticari Reklam ve Haksız Ticari Uygulamalar Yönetmeliğ
 
 ## Sırada ne var
 
-Profil açılıp yorum linkini aldığında hazırlanacaklar:
+Profil doğrulanıp yorum linkini aldığında **aynı gün** üretilecekler — hepsi hazır, sadece link bekliyor:
 
-- [ ] **Yazdırılabilir QR kart (PDF)** — araca, faturaya, müşteriye verilecek kartvizit boyutu
-- [ ] **Siteye müşteri yorumları bölümü** — gerçek yorumlarla dolacak, Review schema'lı
+- [ ] **Yazdırılabilir QR kart** — araca, faturaya, müşteriye verilecek kartvizit boyutu.
+      Üreteç hazır: `python3 pazarlama/qr-uret.py "https://g.page/r/.../review"`
+- [ ] **Sitede müşteri yorumları bölümü** — gerçek yorumlarla dolacak, `Review` şemalı
+- [ ] **Teşekkürler sayfasına yorum çağrısı** — form gönderen müşteri zaten sıcak
 
-İkisi de yorum linkini gerektiriyor. Linki bana ilettiğinde ikisini de üretirim.
+### ⚠️ Neden sitede şimdi yorum bölümü açmıyoruz
+
+Boş bir "Müşteri Yorumları" sayfası ince içeriktir, faydadan çok zarar verir.
+Daha önemlisi: **gerçek yorum yokken `aggregateRating` şeması eklemek yapılandırılmış veri ihlalidir** ve Google'dan manuel işlem yedirir. Yıldız işareti kazanmak için uydurma puan koymak, en hızlı ceza yollarından biri.
+
+İlk 3-5 gerçek yorum geldiğinde ikisini de kurarız.
+
+---
+
+## Gerçekçi takvim
+
+| Ay | Hedef | Toplam |
+|---|---|---|
+| Doğrulama ayı | 3-5 yorum | 5 |
+| +1 ay | 5-8 | 12 |
+| +2 ay | 5-8 | 19 |
+| +3 ay | 5-8 | **25-30** |
+
+Bu tempoda 4. ayın sonunda Pera Nakliyat'ın (10 yorum) üzerine, Eyüpoğlu'nun (32) yanına çıkarız.
+
+**Hız sınırı önemli:** ayda 15-20 yorum doğal görünmez, Google filtreler. Yavaş ve düzenli, hızlı ve dalgalıdan iyidir.
