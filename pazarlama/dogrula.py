@@ -3,7 +3,12 @@ import io, os, re, json, sys
 from html.parser import HTMLParser
 import xml.etree.ElementTree as ET
 
-B = "/sessions/upbeat-elegant-thompson/mnt/dongelnakliyat/site"
+import glob as _glob
+# Oturum yolu her calistirmada degistigi icin sabit yazilmaz; repo koku betigin konumundan bulunur.
+B = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site")
+if not os.path.isdir(B):
+    _c = _glob.glob("/sessions/*/mnt/dongelnakliyat/site")
+    if _c: B = _c[0]
 VOID = {"meta","link","img","br","hr","input","source","area","col","embed","track","wbr","base","param"}
 SVG_SELF = {"path","circle","rect","line","polygon","polyline","ellipse","stop","use"}
 hata = []
