@@ -1,6 +1,6 @@
 # Mustafa'nın Yapacakları — adım adım
 
-Son güncelleme: 5 Eylül 2026
+Son güncelleme: 7 Eylül 2026
 
 Dört iş var. Kolaydan zora sıraladım. Her birinde **nereye gideceğin (link)**, **ne tıklayacağın** ve **ne yazacağın** yazıyor.
 Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
@@ -130,7 +130,7 @@ Sitedeki "10 Yılı Aşkın Tecrübe · İstanbul genelinde saha tecrübesi" ifa
 
 "istanbul evden eve nakliyat" yazınca en üstte reklamlar, hemen altında **3 firmalık harita kutusu** çıkıyor. O kutuya girmenin **tek yolu** bu profil. Site tek başına oraya giremez.
 
-Ayrıca Search Console verisi şunu gösteriyor: 271 sayfamızın sadece 9'u Google'ın dizininde. Google siteyi "gerçek bir işletme" olarak henüz tanımadığı için ağır davranıyor. İşletme Profili bu güveni en hızlı kuran şey.
+Ayrıca Search Console verisi şunu gösteriyor (7 Eylül 2026): 157 sayfanın 144'ü dizine eklendi — indeksleme sorunu büyük ölçüde çözüldü. Asıl sorun artık görünürlük: 28 günde 514 gösterim, **0 tıklama**, ortalama pozisyon 73,5. Yani Google sayfaları biliyor ama çok geriden gösteriyor. İlk sayfaya en yakın olduğumuz kelimelerde bile harita kutusu ekranın üstünü kapatıyor. İşletme Profili o kutuya girmenin tek yolu.
 
 ## Nereye gideceksin
 
