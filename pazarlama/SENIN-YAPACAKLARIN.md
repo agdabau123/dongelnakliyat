@@ -1,6 +1,6 @@
 # Mustafa'nın Yapacakları — adım adım
 
-Son güncelleme: 7 Eylül 2026
+Son güncelleme: 9 Eylül 2026
 
 Dört iş var. Kolaydan zora sıraladım. Her birinde **nereye gideceğin (link)**, **ne tıklayacağın** ve **ne yazacağın** yazıyor.
 Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
@@ -8,9 +8,43 @@ Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 | # | İş | Süre | Etki | Durum |
 |---|---|---|---|---|
 | 1 | Cloudflare www yönlendirmesi | 5 dk | Orta | ✅ **BİTTİ** — 5 Eylül |
-| 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🟡 açıldı — kategori + video kaldı |
+| 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🔴 **4 MÜKERRER KAYIT VAR** — önce temizlik |
 | 3 | Fotoğraf çekimi | 30 dk | Yüksek | ⬜ |
 | 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta | ⬜ |
+
+---
+
+# 🔴 ÖNCELİK — 9 Eylül'de bulundu: 4 mükerrer İşletme Profili
+
+İşletme Profili Yöneticisi'nde **tek profil değil, dört profil** var. Dördü de doğrulanmamış (%0 doğrulandı).
+Google bir markayı, aynı bilgiyi birden fazla yerde tutarlı görünce tanıyor. Burada tam tersi var: dört kayıt,
+dört farklı isim/kategori/saat. **"Google dönmar nakliyatı dönmez diye düzeltiyor" sorununun sebebi büyük
+ihtimalle bu.** Doğrulamaya girmeden önce bunun temizlenmesi lazım — yoksa yanlış kaydı doğrulamış olursun.
+
+| | İsim | Kategori | Bölge | Saat | Site |
+|---|---|---|---|---|---|
+| **A** | Döngel Nakliyat ❌ *(eski isim)* | Evden Eve Nakliyat | İstanbul | 08:00-20:00 ❌ | www ✓ |
+| **B** | DönmarNakliyat ❌ *(bitişik)* | Lojistik Firması ❌ | **Bursa, Düzce +8** ❌ | 09:00-22:00 ❌ | **www'suz** ❌ |
+| **C** | Dönmar Nakliyat ✓ | **Evden Eve Nakliyat ✓** | İstanbul ✓ | 09:00-**21:30** ⚠️ | www ✓ |
+| **D** | Dönmar Nakliyat ✓ | Nakliyat Şirketi ⚠️ | İstanbul ✓ | **08:00-20:00** ❌ | www ✓ |
+
+### Önerim: **C'yi tut, diğer üçünü kapat**
+
+C zaten doğru isimde, doğru bölgede ve **birincil kategorisi zaten "Evden Eve Nakliyat"** —
+yani listedeki "kategori ters" maddesi C için geçerli değilmiş, o madde D'yi tarif ediyormuş.
+C'de düzeltilecek tek şey çalışma saati: **21:30 → 21:00** (site 09:00-21:00 diyor, birebir aynı olmalı).
+
+### Sen ne yapacaksın
+
+👉 https://business.google.com/locations
+
+1. **A, B ve D**'yi tek tek aç → sağ üstteki üç nokta → **"İşletmeyi kaldır" / "Profili sil"**.
+   Doğrulanmamış kayıtlar olduğu için silmek kolay, kimseye görünmüyorlar zaten.
+2. **C'yi aç** → Profili düzenle → Çalışma saatleri → **09:00 - 21:00** yap.
+3. Sonra **sadece C için** video doğrulamasına gir (adımlar aşağıda).
+
+> ⚠️ Silme işini ben yapmıyorum: canlı işletme kaydını kalıcı silmek geri alınamıyor, bu senin kararın olmalı.
+> Hangisinin silineceğinden emin değilsen bana sor, birlikte bakarız.
 
 ---
 
@@ -90,7 +124,11 @@ Adres kendiliğinden `www.dongelnakliyat.com/blog` olarak değişiyorsa **tamam*
 
 ---
 
-# 2. Google İşletme Profili — 🟡 AÇILDI, DOĞRULAMA BEKLİYOR
+# 2. Google İşletme Profili — 🔴 ÖNCE MÜKERRER TEMİZLİĞİ (yukarı bak)
+
+> **9 Eylül notu:** Aşağıdaki tablo tek profil varsayımıyla yazılmıştı. Gerçekte dört kayıt var —
+> yukarıdaki kırmızı bölüme bak. Aşağısı, tutulacak profil (C) için hâlâ geçerli.
+> "Kategori ters" maddesi C'de **zaten düzelmiş**; C'de kalan tek düzeltme çalışma saati (21:30 → 21:00).
 
 ## Durum (5 Eylül 2026)
 
@@ -349,14 +387,47 @@ Ayrıntı: `pazarlama/YORUM-TOPLAMA.md`
 
 - Her sabah: Search Console ölçümü → 2 ilçe sayfası derinleştirme → günün içeriği → doğrulama → otomatik yayın
 - **5 Eylül itibarıyla Search Console okunuyor** — artık gerçek sıralama verisi raporda var. Tek şart: tarayıcıda Google oturumun açık kalsın.
-- Kalan ince sayfa: evden eve 31/39, asansörlü 39/39. Günde 2 tanesini derinleştiriyorum.
+- Kalan ince sayfa: evden eve **19/39**, asansörlü 39/39. Günde 2 tanesini derinleştiriyorum.
 - Push "token" hatası verirse raporda yazarım; `TOKEN-KUR.bat` dosyasını tekrar çalıştırman yeter.
+
+## Search Console — 9 Eylül ölçümü (son 28 gün)
+
+151 sorgu · **565 gösterim · 0 tıklama · ort. pozisyon 73,7** · dizinde 144 sayfa (212 sayfa dizin dışı,
+büyük bölümü 301'lediğimiz eski sayfalar).
+
+**Kelime kümeleri — gösterim / ortalama pozisyon:**
+
+| Küme | Sorgu | Gösterim | Ort. pozisyon |
+|---|---|---|---|
+| **parça eşya taşıma + ilçe** | 11 | **133** | **66,4** ← sorgu başına en verimli küme |
+| evden eve + ilçe | 52 | 227 | 77,7 |
+| fiyat / ücret / ne kadar | 31 | 92 | 70,2 |
+| ofis taşımacılığı | 37 | 76 | 81,1 |
+| asansörlü | 20 | 49 | 76,8 |
+| **marka ("dönmar nakliyat")** | **0** | **0** | — ← marka hâlâ görünmez |
+
+**İlk sayfaya en yakın 3 kelime:**
+1. `nakliyeciler klima söker mi` — **pozisyon 10** (sitenin en iyi sırası; 9 Eylül'de başlık bu soruya göre düzeltildi)
+2. `adalar asansörlü nakliyat` — pozisyon 37
+3. `istanbul evden eve nakliyat fiyatlari` — pozisyon 40,5
+
+### 📌 Kayda geçsin: parça eşya bulgusu
+
+`parça eşya taşıma + ilçe` sorguları, sorgu başına en çok gösterimi alan küme (12,1 gösterim/sorgu;
+evden evede bu 4,4). Bu sayfaları 4 Eylül'de kapı sayfası oldukları için 301'leyip kaldırmıştık —
+karar doğruydu, ilçe×hizmet kapı sayfası üretmeye geri dönmüyoruz. Ama talep gerçek.
+**Doğru cevap:** tek ve gerçekten iyi bir `hizmetler/parca-esya-tasima` sayfası + bölge hub'larındaki
+`#parca-esya` bölümleri. Bunu yakın bir güne planlıyorum.
 
 ---
 
 ## Özet — şu sırayla yap
 
 1. ~~Cloudflare yönlendirmesi~~ ✅ **bitti (5 Eylül)**
-2. İşletme Profili 🟡 **açıldı** — kalan: kategorileri yer değiştir (2 dk) + video doğrulaması (ofiste)
-3. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
-4. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
+2. **🔴 İlk iş (15 dk):** Mükerrer 3 profili sil (A, B, D), C'nin saatini 21:00 yap — en üstteki kırmızı bölüm
+3. **Sonra (ofiste):** Sadece C için video doğrulaması
+4. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
+5. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
+
+> Not: 4. madde (marka kayıtları) mükerrer profiller silinmeden yapılırsa işe yaramaz — Google'a yine
+> çelişkili sinyal gitmiş olur. Sıra önemli: önce temizlik, sonra doğrulama, sonra dış kayıtlar.
