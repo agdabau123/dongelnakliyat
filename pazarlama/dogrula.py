@@ -194,6 +194,33 @@ for fp in files:
                 hata.append("%s: yan formda yanlis ilce adi '%s' (sablon kopyalama kalintisi)" % (rel, ad))
             break
 
+# ---- sablon kopyalama kalintisi: semt sayfasinda baska semtin adi ----
+# Bir semt rehberi baska bir semt sayfasindan kopyalandiginda kalinti tipik olarak
+# giris paragrafinda (p.lead), basliklarda ve form placeholder'larinda kalir.
+# Govdedeki normal capraz linkler (ör. "Bahcesehir sayfamiza bakin") mesrudur,
+# bu yuzden sadece lead + basliklar + placeholder kontrol edilir; link metinleri haric.
+import glob as _glob
+_AD = {"atasehir-finans-merkezi": [u"Finans Merkezi"], "kurtkoy": [u"Kurtköy"],
+       "halkali": [u"Halkalı"], "atakoy": [u"Ataköy"], "bahcesehir": [u"Bahçeşehir"]}
+def _linksiz(x):
+    return re.sub(r'<a\b.*?</a>', ' ', x, flags=re.S)
+for _fp in sorted(_glob.glob(os.path.join(B, "semtler", "*.html"))):
+    _rel = os.path.relpath(_fp, B).replace("\\", "/")
+    _kendi = os.path.basename(_fp)[:-5].replace("-evden-eve-nakliyat", "")
+    _h = io.open(_fp, encoding="utf-8").read()
+    _parca = []
+    _m = re.search(r'<p class="lead".*?</p>', _h, re.S)
+    if _m: _parca.append(_m.group(0))
+    _parca += re.findall(r'<h1[^>]*>.*?</h1>', _h, re.S)
+    _parca += re.findall(r'<h2[^>]*>.*?</h2>', _h, re.S)
+    _parca += re.findall(r'placeholder="Örn: [^"]*"', _h)
+    _metin = _linksiz(" ".join(_parca))
+    for _s, _adlar in _AD.items():
+        if _s == _kendi: continue
+        for _a in _adlar:
+            if _a in _metin:
+                hata.append("%s: giris/baslik/formda baska semtin adi '%s' (sablon kopyalama kalintisi)" % (_rel, _a))
+
 # ---- _redirects + yasak dosyalar ----
 if not os.path.exists(os.path.join(B,"_redirects")): hata.append("_redirects dosyasi YOK")
 for pref in ("ofis-tasimaciligi-","parca-esya-tasima-","sehirlerarasi-nakliyat-"):
