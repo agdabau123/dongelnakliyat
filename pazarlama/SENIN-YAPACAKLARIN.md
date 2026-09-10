@@ -11,11 +11,32 @@ Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 | 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🔴 **4 MÜKERRER KAYIT VAR** — önce temizlik |
 | 3 | Fotoğraf çekimi | 30 dk | Yüksek | ⬜ |
 | 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta | ⬜ |
-| 5 | Natro otomatik yenileme | 2 dk | **Kritik** | ⬜ **sadece giriş yap, gerisini ben yaparım** |
+| 5 | Natro otomatik yenileme | — | Kritik | ✅ **ZATEN AÇIKMIŞ** — 10 Eylül'de teyit edildi |
 
 ---
 
-# 🔴 5. Natro otomatik yenileme — 2 dakika
+# 5. Natro otomatik yenileme — ✅ KONTROL EDİLDİ, AÇIK (10 Eylül 2026)
+
+Panele girip baktım. Her iki alan adında da durum şu:
+
+| Alan adı | Bitiş | Otomatik yenileme |
+|---|---|---|
+| **dongelnakliyat.com** | 26 Ağustos 2027 | ✅ Aktif — kayıtlı karttan **20 Ağustos 2027**'de çekilecek |
+| dongelnakliyat.xyz | 26 Ağustos 2027 | ✅ Aktif — aynı kart, aynı tarih |
+
+Ödeme talimatı 26 Ağustos 2026'da, alan adını alırken sepette verilmiş. Yani yapılacak bir şey yoktu.
+Yenileme, bitiş tarihinden **6 gün önce** deneniyor — sorun çıkarsa müdahale için pay var.
+
+### Tek dikkat edilecek şey
+
+Kayıtlı kartın son kullanma tarihi 2027 Ağustos'tan önce dolarsa çekim başarısız olur ve alan adı düşer.
+**Kartı yenilediğinde Natro'daki kayıtlı kartı da güncelle.** Bunu 2027 Temmuz'a not düştüm, o dönemde
+hatırlatacağım.
+
+<details>
+<summary>Eski talimat (artık gerekmiyor)</summary>
+
+## Neden gerekiyordu
 
 **9-10 Eylül'de site 20 saat kapalı kaldı.** Sebep: alan adı kayıt e-postasını 14 gün içinde
 onaylamadığın için Natro alan adını ICANN kuralı gereği askıya aldı (`clientHold`). Onayladın, düzeldi.
@@ -33,6 +54,8 @@ bu kural bende sabit, hesap şifrelerini görmem ve yazmam.
 
 Kendin yapmak istersen: giriş → **Alan Adlarım** → `dongelnakliyat.com` → **Otomatik Yenileme: Açık**.
 Kayıtlı ödeme yöntemi yoksa onu da eklemen gerekiyor, yoksa otomatik yenileme çalışmaz.
+
+</details>
 
 ---
 
@@ -446,10 +469,11 @@ karar doğruydu, ilçe×hizmet kapı sayfası üretmeye geri dönmüyoruz. Ama t
 ## Özet — şu sırayla yap
 
 1. ~~Cloudflare yönlendirmesi~~ ✅ **bitti (5 Eylül)**
-2. **🔴 İlk iş (15 dk):** Mükerrer 3 profili sil (A, B, D), C'nin saatini 21:00 yap — en üstteki kırmızı bölüm
-3. **Sonra (ofiste):** Sadece C için video doğrulaması
-4. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
-5. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
+2. ~~Natro otomatik yenileme~~ ✅ **zaten açıkmış, teyit edildi (10 Eylül)**
+3. **🔴 İlk iş (15 dk):** Mükerrer 3 profili sil (A, B, D), C'nin saatini 21:00 yap — en üstteki kırmızı bölüm
+4. **Sonra (ofiste):** Sadece C için video doğrulaması
+5. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
+6. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
 
 > Not: 4. madde (marka kayıtları) mükerrer profiller silinmeden yapılırsa işe yaramaz — Google'a yine
 > çelişkili sinyal gitmiş olur. Sıra önemli: önce temizlik, sonra doğrulama, sonra dış kayıtlar.
