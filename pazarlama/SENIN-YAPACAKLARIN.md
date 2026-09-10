@@ -196,6 +196,10 @@ Profil oluşturuldu, şu an **"HERKESE GÖRÜNÜR DEĞİL"** — doğrulama yap�
 | **Doğrulama** | yapılmadı (video) | ⬜ **kalan iş** |
 | Fotoğraf | yok — gerçek fotoğraf bekleniyor | ⬜ |
 
+> 📌 **10 Eylül:** Silme ve saat düzeltmesinin ekran ekran anlatımı ayrı dosyada:
+> **`pazarlama/ISLETME-PROFILI-ADIM-ADIM.md`** — mağaza kodlarıyla birlikte, hangi menüde
+> neye basılacağı yazılı. Aşağıdaki eski özet yerine onu kullan.
+
 ### Kalan iki iş
 
 **a) Kategorileri yer değiştir (2 dk)**
@@ -374,14 +378,20 @@ Saatler:  Her gün 08:00 - 20:00
 
 **Kural:** Tek bir harf, tek bir boşluk bile farklı olmayacak. Farklı numara = Google için ayrı firma.
 
-## 4a. Bulurum kaydını düzelt (10 dk)
+## 4a. Bulurum'a yeni kayıt aç (10 dk)
 
 👉 https://www.bulurum.com
 
-Orada şöyle bir kayıt var: **"DÖNMAR TAŞIMACILIK (İsa Döngel), Başakşehir, 0545 271 79 54"**
+> 📌 **Düzeltme (10 Eylül):** Daha önce buraya "Bulurum'daki kaydı düzelt" diye yazmıştım.
+> **Yanlıştı.** Oradaki **"DÖNMAR TAŞIMACILIK (İsa Döngel), Başakşehir, 0545 271 79 54"** kaydı
+> **bize ait değil** — Mustafa teyit etti, başka bir firma. **O kayda dokunma.**
 
-- **Bu senin işletmense:** kaydı sahiplen, adı `Dönmar Nakliyat`, telefonu `0538 861 41 10`, siteyi `www.dongelnakliyat.com` yap.
-- **Senin değilse:** dokunma, bana haber ver.
+Yapılacak şey: sıfırdan **kendi** kaydını açmak — `Dönmar Nakliyat`, `0538 861 41 10`,
+`www.dongelnakliyat.com`, `info@dongelnakliyat.com`, `Her gün 09:00 - 21:00`.
+
+**Not:** Piyasada aynı isimde başka bir nakliyat firması olması marka aramasında ayrışmayı
+zorlaştırıyor. Bunun tek çözümü doğrulanmış İşletme Profili ve gerçek yorumlar; ayrıntısı
+`pazarlama/IS-ALMA-PLANI.md` içinde.
 
 ## 4b. Yandex Business — ücretsiz, rakip az (15 dk)
 

@@ -218,14 +218,30 @@ Keşif ücretsiz, çıkan fiyat sözleşmede sabit kalır. 0538 861 41 10
 Google bir markayı, aynı bilgiyi birden fazla bağımsız kaynakta görünce tanıyor.
 Şu an marka aramasında **0 gösterimimiz** var — Google "Dönmar Nakliyat"ı tanımıyor.
 
-## 4a. Bulurum'daki yanlış kaydı düzelt
+## 4a. Bulurum'a **yeni** kayıt aç
 
 👉 https://www.bulurum.com
 
-Orada şöyle bir kayıt var: **"DÖNMAR TAŞIMACILIK (İsa Döngel), Başakşehir, 0545 271 79 54"**
+> 📌 **Düzeltme (10 Eylül):** Bulurum'da gördüğüm **"DÖNMAR TAŞIMACILIK (İsa Döngel), Başakşehir,
+> 0545 271 79 54"** kaydı **bize ait değil** — Mustafa teyit etti, başka bir firma.
+> **O kayda dokunma, sahiplenmeye çalışma.**
 
-- Senin işletmense: sahiplen, adı `Dönmar Nakliyat`, telefonu `0538 861 41 10`, siteyi `www.dongelnakliyat.com` yap
-- Senin değilse: dokunma, bana haber ver
+Yapılacak şey o kaydı düzeltmek değil, **kendi kaydını sıfırdan açmak**: `Dönmar Nakliyat`,
+`0538 861 41 10`, `www.dongelnakliyat.com`.
+
+### ⚠️ Bunu bilmemiz gereken bir şey
+
+Piyasada **aynı isimde başka bir nakliyat firması var** ("DÖNMAR TAŞIMACILIK", Başakşehir).
+Bu SEO açısından gerçek bir zorluk: birisi "dönmar nakliyat" aradığında Google iki firmayı
+ayırt etmek zorunda kalıyor ve şu an ikimizi de tanımıyor.
+
+Bunun panik yapılacak bir tarafı yok ama stratejiyi etkiliyor:
+
+- Marka aramasında ayrışmanın tek yolu **doğrulanmış İşletme Profili + gerçek yorumlar**.
+  Adres, telefon ve web sitesi üçlüsü seni ayrı bir işletme olarak tanımlıyor.
+- Bu yüzden İşletme Profili işi, sadece harita kutusu için değil **marka sahipliği** için de kritik.
+- Basılı her yerde (araç yazısı, kartvizit, ilan) **"Dönmar Nakliyat · dongelnakliyat.com"** ikisini
+  yan yana kullan. Alan adı seni diğerinden ayıran en net işaret.
 
 ## 4b. Yandex Business — ücretsiz, rakip az
 
