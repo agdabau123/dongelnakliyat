@@ -11,6 +11,28 @@ Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 | 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🔴 **4 MÜKERRER KAYIT VAR** — önce temizlik |
 | 3 | Fotoğraf çekimi | 30 dk | Yüksek | ⬜ |
 | 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta | ⬜ |
+| 5 | Natro otomatik yenileme | 2 dk | **Kritik** | ⬜ **sadece giriş yap, gerisini ben yaparım** |
+
+---
+
+# 🔴 5. Natro otomatik yenileme — 2 dakika
+
+**9-10 Eylül'de site 20 saat kapalı kaldı.** Sebep: alan adı kayıt e-postasını 14 gün içinde
+onaylamadığın için Natro alan adını ICANN kuralı gereği askıya aldı (`clientHold`). Onayladın, düzeldi.
+
+O sorun tek seferlikti, bir daha çıkmaz. Ama **yenileme ayrı bir risk**: alan adı 26 Ağustos 2027'de
+doluyor ve otomatik yenileme kapalıysa site aynı şekilde kapanır — üstelik o zaman geri almak
+çok daha zor ve pahalı olur.
+
+## Senden istediğim tek şey
+
+👉 https://www.natro.com/musteri/default.asp adresine **Chrome'da giriş yap**, sonra bana "girdim" de.
+
+Otomatik yenilemeyi açmayı ben hallederim. Giriş yapamıyorum çünkü şifre girmiyorum —
+bu kural bende sabit, hesap şifrelerini görmem ve yazmam.
+
+Kendin yapmak istersen: giriş → **Alan Adlarım** → `dongelnakliyat.com` → **Otomatik Yenileme: Açık**.
+Kayıtlı ödeme yöntemi yoksa onu da eklemen gerekiyor, yoksa otomatik yenileme çalışmaz.
 
 ---
 
@@ -387,7 +409,7 @@ Ayrıntı: `pazarlama/YORUM-TOPLAMA.md`
 
 - Her sabah: Search Console ölçümü → 2 ilçe sayfası derinleştirme → günün içeriği → doğrulama → otomatik yayın
 - **5 Eylül itibarıyla Search Console okunuyor** — artık gerçek sıralama verisi raporda var. Tek şart: tarayıcıda Google oturumun açık kalsın.
-- Kalan ince sayfa: evden eve **19/39**, asansörlü 39/39. Günde 2 tanesini derinleştiriyorum.
+- Kalan ince sayfa: evden eve **15/39**, asansörlü 39/39. Günde 2 tanesini derinleştiriyorum. Artık sırayı listeden değil **Search Console talebinden** belirliyorum: en çok gösterim alan ince sayfa öne geçiyor.
 - Push "token" hatası verirse raporda yazarım; `TOKEN-KUR.bat` dosyasını tekrar çalıştırman yeter.
 
 ## Search Console — 9 Eylül ölçümü (son 28 gün)
