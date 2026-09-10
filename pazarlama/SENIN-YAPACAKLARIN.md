@@ -1,6 +1,10 @@
 # Mustafa'nın Yapacakları — adım adım
 
-Son güncelleme: 9 Eylül 2026
+Son güncelleme: 10 Eylül 2026
+
+> 📌 **İş almak için ne yapılmalı sorusunun cevabı ayrı dosyada:** `pazarlama/IS-ALMA-PLANI.md`
+> Bu dosya siteyle ilgili teknik maddeleri tutuyor; iş alma kanalları (eski müşteri, İşletme Profili,
+> Armut, Bulurum/Yandex, Ads) ve hazır mesaj şablonları orada.
 
 Dört iş var. Kolaydan zora sıraladım. Her birinde **nereye gideceğin (link)**, **ne tıklayacağın** ve **ne yazacağın** yazıyor.
 Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
