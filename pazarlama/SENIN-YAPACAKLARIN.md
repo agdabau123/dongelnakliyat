@@ -12,7 +12,7 @@ Bir maddeyi bitirince bana "1 bitti" de, gerisini ben devralırım.
 | # | İş | Süre | Etki | Durum |
 |---|---|---|---|---|
 | 1 | Cloudflare www yönlendirmesi | 5 dk | Orta | ✅ **BİTTİ** — 5 Eylül |
-| 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🔴 **4 MÜKERRER KAYIT VAR** — önce temizlik |
+| 2 | Google İşletme Profili | 40 dk | **En yüksek** | 🟡 temizlik ✅ + saat ✅ — **kalan: doğrulama** |
 | 3 | Fotoğraf çekimi | 30 dk | Yüksek | ⬜ |
 | 4 | Marka kayıtları (rehber + sosyal) | 40 dk | Orta | ⬜ |
 | 5 | Natro otomatik yenileme | — | Kritik | ✅ **ZATEN AÇIKMIŞ** — 10 Eylül'de teyit edildi |
@@ -63,7 +63,18 @@ Kayıtlı ödeme yöntemi yoksa onu da eklemen gerekiyor, yoksa otomatik yenilem
 
 ---
 
-# 🔴 ÖNCELİK — 9 Eylül'de bulundu: 4 mükerrer İşletme Profili
+# ✅ ÇÖZÜLDÜ — 4 mükerrer İşletme Profili (10 Eylül)
+
+**Mustafa 10 Eylül'de temizledi, panelden teyit ettim.** 4 işletme → 1 işletme.
+Kalan kayıt `13508379437280358707`; ismi, kategorisi (Evden Eve Nakliyat), bölgesi, telefonu,
+sitesi doğru ve çalışma saati **09:00-21:00** olarak site ile birebir eşitlendi.
+
+**Kalan tek iş: doğrulama.** Adımları `pazarlama/ISLETME-PROFILI-ADIM-ADIM.md` Bölüm 4'te.
+
+<details>
+<summary>Sorunun ne olduğu (kayıt için)</summary>
+
+## 9 Eylül'de bulunan durum: 4 mükerrer İşletme Profili
 
 İşletme Profili Yöneticisi'nde **tek profil değil, dört profil** var. Dördü de doğrulanmamış (%0 doğrulandı).
 Google bir markayı, aynı bilgiyi birden fazla yerde tutarlı görünce tanıyor. Burada tam tersi var: dört kayıt,
@@ -94,6 +105,10 @@ C'de düzeltilecek tek şey çalışma saati: **21:30 → 21:00** (site 09:00-21
 
 > ⚠️ Silme işini ben yapmıyorum: canlı işletme kaydını kalıcı silmek geri alınamıyor, bu senin kararın olmalı.
 > Hangisinin silineceğinden emin değilsen bana sor, birlikte bakarız.
+
+**→ Bu iş 10 Eylül'de tamamlandı.**
+
+</details>
 
 ---
 
@@ -484,10 +499,13 @@ karar doğruydu, ilçe×hizmet kapı sayfası üretmeye geri dönmüyoruz. Ama t
 
 1. ~~Cloudflare yönlendirmesi~~ ✅ **bitti (5 Eylül)**
 2. ~~Natro otomatik yenileme~~ ✅ **zaten açıkmış, teyit edildi (10 Eylül)**
-3. **🔴 İlk iş (15 dk):** Mükerrer 3 profili sil (A, B, D), C'nin saatini 21:00 yap — en üstteki kırmızı bölüm
-4. **Sonra (ofiste):** Sadece C için video doğrulaması
+3. ~~Mükerrer 3 profili sil + saat düzeltmesi~~ ✅ **bitti (10 Eylül)**
+4. **🔴 Sıradaki iş:** İşletme Profili doğrulaması — `ISLETME-PROFILI-ADIM-ADIM.md` Bölüm 4.
+   Önce "Doğrulama yapın"a basıp sunulan yöntemlerin ekran görüntüsünü bana at; SMS çıkarsa 2 dakika.
 5. **Bir iş gününde:** Fotoğraf çek, klasöre at (30 dk)
-6. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
+6. **Bu hafta, 20 dk, 0 TL:** Eski müşteri + apartman yöneticisi + emlakçı mesajları —
+   şablonlar `IS-ALMA-PLANI.md` içinde. **En hızlı iş getiren kanal bu.**
+7. **Boş bir akşam:** Bulurum + Yandex + sosyal hesaplar (40 dk)
 
 > Not: 4. madde (marka kayıtları) mükerrer profiller silinmeden yapılırsa işe yaramaz — Google'a yine
 > çelişkili sinyal gitmiş olur. Sıra önemli: önce temizlik, sonra doğrulama, sonra dış kayıtlar.

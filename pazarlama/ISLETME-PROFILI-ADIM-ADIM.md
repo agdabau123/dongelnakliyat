@@ -2,6 +2,36 @@
 
 Hazırlanma: 10 Eylül 2026 · Süre: 15-20 dk (video doğrulaması hariç)
 
+---
+
+## ✅ 10 Eylül — TEMİZLİK VE SAAT BİTTİ
+
+Mustafa yaptı, panelden teyit ettim:
+
+| İş | Durum |
+|---|---|
+| 3 mükerrer kayıt silindi | ✅ 4 işletme → **1 işletme** |
+| Doğru kayıt tutuldu (`13508379437280358707`) | ✅ |
+| Çalışma saati 21:30 → 21:00 | ✅ **09:00-21:00** |
+
+Kalan profilin son durumu:
+
+```
+Dönmar Nakliyat            ✅
+Evden Eve Nakliyat         ✅  (birincil kategori, hedef kelimeyle birebir)
+İstanbul, Türkiye          ✅
+09:00-21:00                ✅  (site ile birebir aynı)
+0538 861 41 10             ✅
+www.dongelnakliyat.com     ✅
+─────────────────────────────
+HERKESE GÖRÜNÜR DEĞİL      ⬜  ← tek kalan: doğrulama
+```
+
+**Geriye tek iş kaldı: doğrulama.** Aşağıdaki Bölüm 4'e geç.
+Bölüm 1-3 tamamlandı, kayıt olarak duruyor.
+
+---
+
 Bu dosyayı 10 Eylül'de panelinde gezip **kendi ekranından** hazırladım. Aşağıdaki her şeyi
 orada bizzat gördüm, tahmin yok.
 
@@ -138,12 +168,20 @@ Her gün: 09:00 - 21:00
 
 ---
 
-# BÖLÜM 4 — Video doğrulaması (ofiste, araç yanında)
+# BÖLÜM 4 — Doğrulama (tek kalan iş)
 
-Temizlik bitmeden buna başlama. Yanlış profili doğrularsan geri almak çok daha zor.
+Temizlik bitti, artık buraya geçebilirsin.
 
-Profil ekranında kırmızı uyarı ve **"Doğrulama yapın"** düğmesi var. Ona bastığında Google
-doğrulama yöntemini soracak; hizmet bölgesi işletmelerinde genelde **video** istiyor.
+## Önce şunu yap: hangi yöntemler sunuluyor bir bak
+
+Profil ekranındaki **"Doğrulama yapın"** düğmesine bas ve **çıkan seçeneklerin ekran görüntüsünü
+bana at.** Nedeni şu: Google bazen hizmet bölgesi işletmelerine de **telefon/SMS** ya da
+**e-posta** seçeneği sunuyor. Öyleyse iş 2 dakikada biter, video çekmene hiç gerek kalmaz.
+
+Video görünüyorsa aşağıdaki adımlarla devam et.
+
+> Ben o düğmeye senin adına basmadım — doğrulama akışını başlatmak bazı durumlarda yöntem
+> seçimini kilitliyor ve başarısız denemeler sonraki hakları etkiliyor. Bu kararı sen vermelisin.
 
 ## Kurallar
 
@@ -187,11 +225,12 @@ O linkle şunları ben hazırlarım:
 
 # Özet — sırayla
 
-1. ⬜ `05219574286274898789` (Döngel Nakliyat) → İşletmeyi kaldır
-2. ⬜ `01139537662710523817` (DönmarNakliyat, Bursa) → İşletmeyi kaldır
-3. ⬜ `17175691592224202295` (Dönmar Nakliyat) → İşletmeyi kaldır
-4. ⬜ `13508379437280358707` → çalışma saati 21:30 → **21:00**
-5. ⬜ Aynı profil için video doğrulaması
-6. ⬜ Onay gelince yorum linkini bana at
+1. ✅ `05219574286274898789` (Döngel Nakliyat) → silindi
+2. ✅ `01139537662710523817` (DönmarNakliyat, Bursa) → silindi
+3. ✅ `17175691592224202295` (Dönmar Nakliyat) → silindi
+4. ✅ `13508379437280358707` → çalışma saati **09:00-21:00** yapıldı
+5. ⬜ **"Doğrulama yapın" → sunulan yöntemlerin ekran görüntüsünü bana at**
+6. ⬜ Doğrulamayı tamamla (SMS çıkarsa 2 dk, video çıkarsa yukarıdaki 5 adım)
+7. ⬜ Onay gelince `g.page/r/...` yorum linkini bana at
 
 Takıldığın adımda ekran görüntüsü at, oradan devam ederiz.
