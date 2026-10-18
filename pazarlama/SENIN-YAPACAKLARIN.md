@@ -1,6 +1,6 @@
 # Mustafa'nın Yapacakları — adım adım
 
-Son güncelleme: 10 Eylül 2026
+Son güncelleme: 18 Ekim 2026
 
 > 📌 **İş almak için ne yapılmalı sorusunun cevabı ayrı dosyada:** `pazarlama/IS-ALMA-PLANI.md`
 > Bu dosya siteyle ilgili teknik maddeleri tutuyor; iş alma kanalları (eski müşteri, İşletme Profili,
@@ -461,8 +461,22 @@ Ayrıntı: `pazarlama/YORUM-TOPLAMA.md`
 
 - Her sabah: Search Console ölçümü → 2 ilçe sayfası derinleştirme → günün içeriği → doğrulama → otomatik yayın
 - **5 Eylül itibarıyla Search Console okunuyor** — artık gerçek sıralama verisi raporda var. Tek şart: tarayıcıda Google oturumun açık kalsın.
-- Kalan ince sayfa: evden eve **15/39**, asansörlü 39/39. Günde 2 tanesini derinleştiriyorum. Artık sırayı listeden değil **Search Console talebinden** belirliyorum: en çok gösterim alan ince sayfa öne geçiyor.
+- Kalan ince sayfa (18 Ekim): evden eve **15/39** (Şişli ve Beşiktaş 18 Ekim'de derinleşti), asansörlü 39/39. Günde 2 tanesini derinleştiriyorum. Artık sırayı listeden değil **Search Console talebinden** belirliyorum: en çok gösterim alan ince sayfa öne geçiyor.
 - Push "token" hatası verirse raporda yazarım; `TOKEN-KUR.bat` dosyasını tekrar çalıştırman yeter.
+
+## Search Console — 18 Ekim ölçümü (son 28 gün) ⚠️
+
+379 sorgu · **~1.540 gösterim · 1 tıklama · ort. pozisyon 70,5** · dizinde 166 sayfa.
+
+**Dikkat: 7 Ekim'den beri günlük gösterim 0.** Kontrol edildi: site açık, robots.txt ve meta robots doğru,
+manuel işlem yok, sitemap 14 Ekim'de başarıyla okunmuş, `site:` aramasında sayfalar duruyor. Yani site
+düşmedi; büyük ihtimalle 70-90. sıralardaki "derin" gösterimler kesildi (bu sıralar zaten tıklama getirmez).
+Kalıcı çözüm aynı: derin içerik + İşletme Profili. Bir hafta daha 0 kalırsa ayrıca incelenecek.
+
+- 5 Ekim–18 Ekim arası rutin çalışmamış (13 gün commit yok). 18 Ekim'de yeniden başlatıldı.
+- Dizine hiç girmemiş önemli sayfalar: `/blog`, `/hizmetler/asansorlu-tasimacilik` ve 10 blog yazısı
+  ("Keşfedildi – dizine eklenmedi"). İndeksleme isteği gönderiliyor.
+- `hizmetler/evden-eve-nakliyat.html` için "yönlendirme hatası" 30 Ağustos tarihli ve eski; adres şu an düzgün açılıyor.
 
 ## Search Console — 9 Eylül ölçümü (son 28 gün)
 
